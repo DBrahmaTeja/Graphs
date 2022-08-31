@@ -1,6 +1,6 @@
 //DFS+Pruning
 
-void solve(vector<vector<int>> &adj, vector<vector<int>> &cost, int src, int dst, intk, int &fare, int totCost, vector<bool> &visited)
+void solve(vector<vector<int>> &adj, vector<vector<int>> &cost, int src, int dst, int k, int &fare, int totCost, vector<bool> &visited)
 {
 
     if (k < -1)
@@ -21,7 +21,7 @@ void solve(vector<vector<int>> &adj, vector<vector<int>> &cost, int src, int dst
     visited[src] = false;
 }
 
-int findCheapestPrice(intn, vector<vector<int>> &flights, int src, int dst, intk)
+int findCheapestPrice(intn, vector<vector<int>> &flights, int src, int dst, int k)
 {
 
     vector<vector<int>> adj(n);
